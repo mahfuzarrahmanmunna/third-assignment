@@ -36,6 +36,7 @@
                         primary_clr: 'rgba(255, 220, 38, 1)',
                         text_clr: 'rgba(17, 17, 17, 1)',
                         nav_bg: 'rgba(255, 249, 244, 1)',
+                        card_bg: 'rgba(249, 223, 138, 1)'
                     }
                     // ,
                     // fontFamily: {
@@ -50,22 +51,22 @@
 
 <body class="font-sora">
     <header class="">
-        <nav class="bg-nav_bg">
-            <div class="py-6 flex items-center justify-between bg-nav lg:w-5/6 mx-auto p-3">
+        <nav class="bg-nav_bg lg:mb-16 mb-4">
+            <div class="lg:py-6 flex items-center justify-between lg:w-5/6 mx-auto p-3">
                 <div class="flex items-center">
                     <img src="assets/logo-header.png" alt="">
-                    <h4 class="ps-3 text-2xl">
+                    <h4 class="ps-3 text-2xl invisible lg:visible">
                         Browse<span class="text-primary_clr">4</span>Pets
                     </h4>
                 </div>
-                <div>
+                <div class="hidden lg:block">
                     <ul class="flex gap-8 text-xl text-text_clr">
                         <li><a href="#pet">Find a pet</a></li>
                         <li><a href="#breed">Breeds</a></li>
                         <li><a href="#contact">Contact us</a></li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="lg:flex items-center gap-4  hidden">
                     <div>
                         <i class="fa-solid fa-bell text-2xl"></i>
                     </div>
@@ -77,11 +78,53 @@
                         <button class="btn btn-warning ">Register</button>
                     </div>
                 </div>
+                <div class="lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </div>
+            </div>
         </nav>
-        </nav>
+        <!-- Banner section -->
+        <section class=" lg:w-5/6 mx-auto lg:p-3 lg:mb-32 mb-16">
+            <div
+                class="bg-[url('assets/cat-big.png')] bg-contain lg:bg-center bg-bottom bg-no-repeat w-full p-3 relative">
+                <div>
+                    <h1 class="lg:text-[50px] text-[45px] text-text_clr font-adlam mb-4">
+                        Pamper Your Pet, <br> Because They Deserve <br> the Bes
+                    </h1>
+                </div>
+                <p class="text-xl text-text_clr mb-6">
+                    Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now
+                    and make tails wag with
+                    joy!
+                </p>
+                <div class="">
+                    <button class="btn btn-warning lg:mb-96 mb-32">Find a pet</button>
+                </div>
+                <!-- <div class="absolute z-50 top-24 lg:hidden">
+                    <img src="assets/cat-big.png" alt="">
+                </div> -->
+            </div>
+        </section>
     </header>
-    <main>
-
+    <main class="lg:w-5/6 mx-auto p-3">
+        <!-- Categorie Section -->
+        <section>
+            <h4 class="font-adlam text-4xl">
+                Browse By Categories
+            </h4>
+            <!-- card-1 -->
+            <div class="bg-card_bg text-center">
+                <div class="w-24 rounded-full bg-white  mx-auto">
+                    <img class="p-7" src="assets/dog-cartoon.png" alt="">
+                </div>
+                <h5 class="text-xl font-adlam">
+                    Dog
+                </h5>
+                <p>
+                    3 items
+                </p>
+            </div>
+        </section>
     </main>
     <footer>
 
