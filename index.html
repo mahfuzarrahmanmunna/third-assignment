@@ -39,6 +39,7 @@
                         card_bg: 'rgba(249, 223, 138, 1)',
                         secondary_bg: 'rgba(255, 249, 244, 1)',
                         secondary_card_bg: 'rgba(255, 255, 255, 1)',
+                        footer_bg: 'rgba(255, 220, 38, 0.5)',
                     }
                     // ,
                     // fontFamily: {
@@ -415,24 +416,57 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="lg:p-0 relative lg:mt-[400px] mt-80">
         <!-- Footer Card Section -->
-        <section class="mb-16 lg:mb-32 lg:w-5/6 mx-auto p-3 bg-secondary_bg rounded-xl">
-            <div class="lg:flex items-center lg:gap-20">
-                <img src="assets/cute-pet-mid.png" alt="">
-                <div class="">
-                    <h4 class="lg:text-[32px] text-[22px] font-adlam text-center mb-3 lg:mb-5">
-                        Get Pawsome News!
-                    </h4>
-                    <h5 class="lg:text-xl text-base text-center mb-5 lg:mb-9">
-                        Exclusive training tips, ticks, product deals and more.
-                    </h5>
-                    <input type="text" class="lg:p-4 p-2 text-[14px] lg:text-base border-none w-full mb-3 lg:mb-9"
-                        placeholder="Enter email...." name="" id="">
-                    <button class="btn btn-warning">Subscribe</button>
+        <section class="mb-16 lg:mb-32 lg:w-5/6 mx-auto p-3 absolute -top-52 lg:ms-32">
+            <div class="bg-secondary_bg rounded-xl">
+                <div class="lg:flex items-center lg:gap-20">
+                    <img class="lg:ms-20 lg:my-9" src="assets/cute-pet-mid.png" alt="">
+                    <div class="">
+                        <h4 class="lg:text-[32px] text-[22px] font-adlam text-center mb-3 lg:mb-5">
+                            Get Pawsome News!
+                        </h4>
+                        <h5 class="lg:text-xl text-base text-center mb-5 lg:mb-9">
+                            Exclusive training tips, ticks, product deals and more.
+                        </h5>
+                        <input type="text" class="lg:p-4 p-2 text-[14px] lg:text-base border-none w-full mb-3 lg:mb-9"
+                            placeholder="Enter email...." name="" id="">
+                        <button class="btn btn-warning">Subscribe</button>
+                    </div>
                 </div>
             </div>
-            <!-- Main Div -->
+        </section>
+        <!-- Main Footer Section -->
+        <section class="bg-footer_bg">
+            <div class="lg:w-5/6 mx-auto p-3 ">
+                <div class="lg:flex lg:justify-between lg:mb-32 mb-12 mt-96 ">
+                    <div>
+                        <div class="flex items-center gap-2 lg:gap-3  lg:mb-6 mb-4">
+                            <img src="assets/logo-footer.png" alt="">
+                            <h5 class="text-xl lg:text-2xl">Browse Pets</h5>
+                        </div>
+                        <p class="lg:text-[18px] text-base text-text_clr">
+                            Discover a world of treats, toys, and <br>essentials handpicked for your furry friends
+                        </p>
+                    </div>
+                    <div class="mb-9 lg:mb-0">
+                        <ul class="space-y-5 lg:space-y-8 lg:text-xl mt-9 lg:mt-0">
+                            <li><a href="#find">Find a pet</a></li>
+                            <li><a href="#breed">Breeds</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class=" ">
+                        <p>Flow Us</p>
+                        <div class="flex gap-7">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
