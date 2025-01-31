@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Third Assignment</title>
+    <!-- DaisyUI and Tailwind CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awosome CDN link -->
+
+    <script src="https://kit.fontawesome.com/5c54d19429.js" crossorigin="anonymous"></script> <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <style>
+        /* sora font */
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+
+        /* ADLaM Display font */
+        .font-adlam {
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
+    <!-- Tailwind Store -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary_clr: 'rgba(255, 220, 38, 1)',
+                        text_clr: 'rgba(17, 17, 17, 1)',
+                        nav_bg: 'rgba(255, 249, 244, 1)',
+                    }
+                    // ,
+                    // fontFamily: {
+                    //     // Sora font
+                    //     sorafont: '"Sora", serif;'
+                    // }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="font-sora">
+    <header class="">
+        <nav class="bg-nav_bg">
+            <div class="py-6 flex items-center justify-between bg-nav lg:w-5/6 mx-auto p-3">
+                <div class="flex items-center">
+                    <img src="assets/logo-header.png" alt="">
+                    <h4 class="ps-3 text-2xl">
+                        Browse<span class="text-primary_clr">4</span>Pets
+                    </h4>
+                </div>
+                <div>
+                    <ul class="flex gap-8 text-xl text-text_clr">
+                        <li><a href="#pet">Find a pet</a></li>
+                        <li><a href="#breed">Breeds</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div>
+                        <i class="fa-solid fa-bell text-2xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                    </div>
+                    <button class="btn btn-outline btn-warning text-white">Login</button>
+                    <div>
+                        <button class="btn btn-warning ">Register</button>
+                    </div>
+                </div>
+        </nav>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
