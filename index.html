@@ -91,17 +91,17 @@
             <div
                 class="bg-[url('assets/cat-big.png')] bg-contain lg:bg-center bg-bottom bg-no-repeat w-full p-3 relative">
                 <div>
-                    <h1 class="lg:text-[50px] text-[45px] text-text_clr font-adlam mb-4">
+                    <h1 class="lg:text-[50px] text-[45px] text-text_clr font-adlam mb-4 animate-pulse">
                         Pamper Your Pet, <br> Because They Deserve <br> the Bes
                     </h1>
                 </div>
-                <p class="text-xl text-text_clr mb-6">
+                <p class="text-xl text-text_clr mb-6 animate-none">
                     Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now
                     and make tails wag with
                     joy!
                 </p>
                 <div class="">
-                    <button class="btn btn-warning lg:mb-96 mb-32">Find a pet</button>
+                    <button class="btn btn-warning animate-bounce lg:mb-96 mb-32">Find a pet</button>
                 </div>
                 <!-- <div class="absolute z-50 top-24 lg:hidden">
                     <img src="assets/cat-big.png" alt="">
@@ -379,8 +379,7 @@
                 Everyday low Price
             </h4>
             <div class="lg:flex">
-                <div
-                    class="lg:w-7/12 lg:flex bg-gradient-to-r from-[rgb(248,204,251)] to-[rgb(172,210,253)] lg:ps-16 rounded-xl items-center ">
+                <div class="lg:w-7/12 lg:flex bg-gradient-to-r from-[rgb(248,204,251)] to-[rgb(172,210,253)] lg:ps-16 rounded-xl items-center ">
                     <div class="ps-8 pt-8 lg:p-0">
                         <span class="text-xl hidden lg:flex lg:mb-4">Under Price</span>
                         <h3 class="font-adlam lg:text-[28px] text-xl">
@@ -394,7 +393,7 @@
                         </h1>
                     </div>
                     <div class="lg:w-[380px] flex justify-end">
-                        <img class="w-[200px]" src="assets/cute-dog-mid.png" alt="">
+                        <img class="w-[250px]" src="assets/cute-dog-mid.png" alt="">
                     </div>
                 </div>
                 <div class="mt-6 lg:mt-0 lg:ms-6 lg:w-5/12">
@@ -415,6 +414,48 @@
                 </div>
             </div>
         </section>
+        <!-- High Price Section -->
+        <section class="mb-16 lg:mb-32 lg:w-5/6 mx-auto p-3 lg:mt-28">
+            <h4 class="font-adlam text-4xl lg:mb-12 mb-8">
+                Everyday High Price
+            </h4>
+            <div class="lg:flex">
+                <div
+                    class="lg:w-7/12 lg:flex bg-gradient-to-r from-[rgba(211,192,212,0.75)] to-[rgb(132,151,172)] lg:ps-16 rounded-xl items-center ">
+                    <div class="ps-8 pt-8 lg:p-0">
+                        <span class="text-xl hidden lg:flex lg:mb-4">Upper Price</span>
+                        <h3 class="font-adlam lg:text-[28px] text-xl">
+                            Border Collie
+                        </h3>
+                        <span class="font-adlam lg:text-xl text-xl text-white lg:flex hidden lg:mb-4">
+                            (Easy Hair Removal)
+                        </span>
+                        <h1 class="font-adlam text-[50px] lg:text-black text-white">
+                            $4000.99
+                        </h1>
+                    </div>
+                    <div class="lg:w-[380px] flex justify-end">
+                        <img class="w-[250px] lg:w-full" src="assets/my-asset/black-dog.png" alt="">
+                    </div>
+                </div>
+                <div class="mt-6 lg:mt-0 lg:ms-6 lg:w-5/12">
+                    <div
+                        class="lg:flex bg-gradient-to-r from-[#dee9e9ce] to-[#b191e4] lg:ps-12 p-8 rounded-xl lg:h-[480px]">
+                        <div>
+                            <h3 class="font-adlam lg:text-[30px] text-xl">
+                                Toy Pomeranian
+                            </h3>
+                            <h1 class="font-adlam text-[50px] text-primary_clr">
+                                $3600.99
+                            </h1>
+                        </div>
+                        <div class="flex justify-end">
+                            <img src="assets/my-asset/white-dog.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="lg:p-0 relative lg:mt-[400px] mt-80">
         <!-- Footer Card Section -->
@@ -429,7 +470,8 @@
                         <h5 class="lg:text-xl text-base text-center mb-5 lg:mb-9">
                             Exclusive training tips, ticks, product deals and more.
                         </h5>
-                        <input type="text" class="lg:p-4 p-2 text-[14px] lg:text-base border-none w-full mb-3 lg:mb-9 rounded-md"
+                        <input type="text"
+                            class="lg:p-4 p-2 text-[14px] lg:text-base border-none w-full mb-3 lg:mb-9 rounded-md"
                             placeholder="Enter email...." name="" id="">
                         <button class="btn btn-warning">Subscribe</button>
                     </div>
